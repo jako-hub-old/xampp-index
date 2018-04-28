@@ -1,0 +1,22 @@
+{
+  "name": "jakos-xampp-dashboard",
+  "version": "1.0.0",
+  "description": "Custom dashboard for xampp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jako-hub/xampp-index.git"
+  },
+  "keywords": [
+    "xampp-dasboard"
+  ],
+  "author": "jako-hub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jako-hub/xampp-index/issues"
+  },
+  "homepage": "https://github.com/jako-hub/xampp-index#readme"
+}
