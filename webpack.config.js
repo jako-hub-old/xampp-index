@@ -5,9 +5,9 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     filename: 'index.html',
     inject: 'body',
 });
-
+const mode = 'production';
 module.exports = {
-    mode: 'development',
+    mode: mode,
     performance: {
         hints: false,
     },
@@ -28,6 +28,15 @@ module.exports = {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: "babel-loader",
+            },
+            {
+                test: /\.css$/,
+                use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+            },
+            {
+                test: /\.(woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                //include: './',
+                use: [{loader: 'url-loader'}]
             }
         ]
     },

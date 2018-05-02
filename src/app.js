@@ -1,5 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Layout from './components/Layout.jsx';
+import App from './components/App.jsx';
+import 'normalize.css';
+import 'typeface-roboto';
 
-ReactDOM.render(<Layout />, document.getElementById('app'));
+const styles = {
+    fontFamily: "Roboto",
+    textAlign: "center",
+    overFlow: "auto",
+};
+
+ReactDOM.render(<App styles={styles} />, document.getElementById('app'));
